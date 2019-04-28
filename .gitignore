@@ -1,2 +1,8 @@
+<<<<<<< HEAD
 log.txt
 /dir1
+=======
+log.exampleFile
+/dir2
+*.fileExtensionExample
+>>>>>>> login
