@@ -1,0 +1,27 @@
+Git Commands:
+
+$--git config --global user.name 'your name' //"This is used to set your name to your git account"
+$--git config --global user.email 'email address' //"This is used to set your email to your git account"
+ 
+$--git init  //" This is used to make the folder that it applied to a master branch for git to add stuff to your repository"
+
+$--git add .  //" adds file/s to the git staging area before you commit them "
+
+$--git rm --cached <file>  //"this removes a file from the staging area "
+
+$--git status //"this checks your staging area to see if a change has been made then lets you know what was changed."
+
+$--git commit //"this commits files from the staging area to your respository"
+
+$--git commit -m 'Enter comment to say what was changed EG: "Changed my index.html file" '  //" this the way to commit without having to go to the vim editor"
+
+$--touch <filename.ext> //" Make a file in your directory like mkdir does" 
+
+$--touch .gitignore //"Creates A special file in git that lets you list files and whole directories that you want git to ignore when you are editing and committing content. you can say .txt or .html or .css etc to avoid adding whole groups of file extensions from the commit "
+
+$--git branch <branch name> //"this allows you  to change to a specific branch so as to edit content elsewhere other than the master branch so that you can work on parts of the main project without messing with the main code base. you can work in a separate branch till the piece you are working on is done"
+
+$--git checkout <Name of branch you're switching to>  //"To switch from one branch to another"
+
+$--git merge login 'Merging Login Branch' //"This lets you merge the area you complete to the master branch or main project. NB....This code must be done from within the master branch"
+

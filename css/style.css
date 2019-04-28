@@ -14,7 +14,7 @@ h1{
     margin: 0%;
 }
 
-h2{
+h2 h3{
     font-weight: 400;
     font-size: 1.2rem;
     text-transform: capitalize;
@@ -51,8 +51,14 @@ main{
     color: #888; /*this makes the h2 a lighter color*/
 }
 
-#landing-image{
+.landing-image{
     background: url(https://source.unsplash.com/De8wMYoSSBc);
+}
+.login-image{
+    background: url(https://source.unsplash.com/1600x900/?nature,tree);
+}
+
+.landing-style{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -123,6 +129,10 @@ footer h3{
     #landing-image{
         height: 100vh;
     }
+    .landing-style{
+        height: 100vh;
+    }
+
 
     /*Screen Sizes for 700px and up lol*/
     @media (min-width: 700px) {
