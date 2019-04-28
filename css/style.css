@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed'); /* This is how you call an online google font*/
+
+body{
+    font-family: 'Roboto Condensed', sans-serif; /*This is where you declare the google font you wish to use after  */
+    margin: 0%;
+    background: #eee;
+    height: auto;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0%;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0%;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+main{
+    max-width: 900px;
+    margin: auto;
+    /*This creates the shadow outside the site lolol mad*/
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),-30px 0px 40px rgba(0, 0, 0, 0.1); 
+}
+
+#landing{
+    background: #fff;
+}
+#landing-text{
+    display: flex;
+    flex: 0 1 40vw; /*This conrtols the text width on the landing page*/
+    height: 50vh; /*this takes up the first half of the screen on the landing page*/
+    justify-content: center; /*aligns content horizontaly to the center*/
+    align-items: center; /*aligns content vertically to the center*/
+    text-align: center; /*aligns Text to the center*/
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#landing-text h2{
+    color: #888; /*this makes the h2 a lighter color*/
+}
+
+#landing-image{
+    background: url(https://source.unsplash.com/De8wMYoSSBc);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh; /*this takes up the other half of the screen on the landing page*/
+    flex:0 1 60vw; /*This conrtols the image width on the landing page*/
+    margin: 0%;
+}
+
+.btn{  /* This creates a button out of nothing lol cuz this is a link </a>*/
+    padding: 0.5rem 2rem;
+    border: 1px #ccc solid;
+    display: inline-block; /* this makes room around the button by making it a block element*/
+    margin: 2rem 0 0; /* this creates distance to the top rem makes it change to be responsive*/
+    border-radius: 50px; /* this make the button round lol*/
+    text-decoration: none;
+    color: #333;
+    transition: background 800ms ease; /*This is what fades the button hover to make it smooth*/
+}
+
+.btn:hover{
+    background: #fd5555; /* this is what gets faded in on the button*/
+
+}
+
+#header{
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+#header h2{
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem; 
+}
+
+.caption{
+    padding: 0.8rems;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    column-fill: #333;
+}
+
+footer h3{
+    font-size: 3rem;
+    margin-bottom: 0%;
+}
+
+/* Screen Sizes for 500px and up lol*/
+@media(min-width: 500px){
+    #landing{
+        display: flex;
+        height: 100%;
+    }
+
+    #landing-text{
+        height: 100vh;
+    }
+    
+    #landing-image{
+        height: 100vh;
+    }
+
+    /*Screen Sizes for 700px and up lol*/
+    @media (min-width: 700px) {
+        .btn{
+            padding: 1rem 3rem;
+        }        
+    }
+}
